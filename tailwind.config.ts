@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Poppins', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -51,6 +54,13 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				putera: {
+					'dark-blue': 'hsl(var(--putera-dark-blue))',
+					'neon-blue': 'hsl(var(--putera-neon-blue))',
+					'orange': 'hsl(var(--putera-orange))',
+					'surface': 'hsl(var(--putera-surface))',
+					'surface-hover': 'hsl(var(--putera-surface-hover))',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
