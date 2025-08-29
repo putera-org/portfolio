@@ -4,8 +4,10 @@ import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import ContactSection from "@/components/ContactSection";
 
+type Lang = "en" | "vi";
+
 const Index = () => {
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState<Lang>("en");
 
   const toggleLang = () => {
     setLang((prev) => (prev === "en" ? "vi" : "en"));

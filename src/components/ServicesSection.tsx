@@ -114,7 +114,7 @@ const ServicesSection = ({ lang }: ServicesSectionProps) => {
           {t.services.map((service, index) => (
             <Card
               key={index}
-              className="bg-card/50 border-2 border-putera-surface hover:border-putera-neon-blue/70 transition-all duration-300 hover:glow-neon group"
+              className="glass-card border-2 border-putera-surface hover:border-putera-neon-blue/70 transition-all duration-300 hover:glow-neon group"
             >
               <CardHeader>
                 <div className="w-12 h-12 bg-putera-neon-blue/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-putera-neon-blue/20 transition-colors">

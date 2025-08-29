@@ -86,7 +86,7 @@ const ContactSection = ({ lang = "en" }: ContactSectionProps) => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <Card className="bg-card/50 border-putera-surface">
+          <Card className="glass-card border-putera-surface">
             <CardHeader>
               <CardTitle className="text-2xl font-semibold text-foreground">
                 {t.formTitle}
@@ -98,19 +98,19 @@ const ContactSection = ({ lang = "en" }: ContactSectionProps) => {
                   <label className="text-sm font-medium text-foreground mb-2 block">
                     {t.name}
                   </label>
-                  <Input
+                   <Input
                     placeholder={t.namePlaceholder}
-                    className="bg-putera-surface border-putera-surface focus:border-putera-neon-blue"
+                    className="glass border-putera-surface focus:border-putera-neon-blue"
                   />
                 </div>
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
                     {t.email}
                   </label>
-                  <Input
+                   <Input
                     type="email"
                     placeholder={t.emailPlaceholder}
-                    className="bg-putera-surface border-putera-surface focus:border-putera-neon-blue"
+                    className="glass border-putera-surface focus:border-putera-neon-blue"
                   />
                 </div>
               </div>
@@ -121,7 +121,7 @@ const ContactSection = ({ lang = "en" }: ContactSectionProps) => {
                 </label>
                 <Input
                   placeholder={t.companyPlaceholder}
-                  className="bg-putera-surface border-putera-surface focus:border-putera-neon-blue"
+                  className="glass border-putera-surface focus:border-putera-neon-blue"
                 />
               </div>
 
@@ -131,7 +131,7 @@ const ContactSection = ({ lang = "en" }: ContactSectionProps) => {
                 </label>
                 <Textarea
                   placeholder={t.detailsPlaceholder}
-                  className="bg-putera-surface border-putera-surface focus:border-putera-neon-blue min-h-[120px]"
+                  className="glass border-putera-surface focus:border-putera-neon-blue min-h-[120px]"
                 />
               </div>
 
@@ -199,7 +199,7 @@ const ContactSection = ({ lang = "en" }: ContactSectionProps) => {
             </div>
 
             {/* CTA Card */}
-            <Card className="relative overflow-hidden p-6 text-center rounded-2xl shadow-lg">
+            <Card className="relative overflow-hidden p-6 text-center rounded-2xl glass glow-neon">
               <div className="absolute inset-0 bg-gradient-neon" />
               <div className="absolute inset-0 bg-black/20" /> {/* overlay for readability */}
               <div className="relative z-10">

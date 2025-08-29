@@ -26,7 +26,7 @@ const HeroSection = ({ lang, onToggleLang }) => {
       {/* Language Toggle - Top Right */}
       <button
         onClick={onToggleLang}
-        className="fixed bottom-6 right-6 flex items-center space-x-2 px-3 py-1 border rounded-lg text-sm bg-background/70 backdrop-blur-sm hover:bg-muted transition z-20"
+        className="fixed bottom-6 right-6 flex items-center space-x-2 px-3 py-1 rounded-lg text-sm glass hover:bg-muted/20 transition z-20"
       >
         <Globe className="w-4 h-4 md:w-5 md:h-5" />
         <span>{lang === "en" ? "En" : "Vi"}</span>
@@ -36,7 +36,7 @@ const HeroSection = ({ lang, onToggleLang }) => {
       <div className="container mx-auto px-6 py-32 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-putera-surface px-4 py-2 rounded-full mb-8 glow-neon">
+          <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8 glow-neon">
             <Sparkles className="w-4 h-4 text-putera-neon-blue" />
             <span className="text-sm text-putera-neon-blue font-medium">
                 {lang === "en"
