@@ -76,7 +76,9 @@ const ContactSection = ({ lang = "en" }: ContactSectionProps) => {
                 Start Your <span className="text-gradient">Digital Journey</span>
               </>
             ) : (
-              t.heading
+              <>
+                Bắt đầu <span className="text-gradient">hành trình số</span>
+              </>
             )}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

@@ -100,10 +100,19 @@ const ServicesSection = ({ lang }: ServicesSectionProps) => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            {t.heading.split(" ")[0]}{" "}
-            <span className="text-gradient">
-              {t.heading.split(" ").slice(1).join(" ")}
-            </span>
+            {lang === "vi" ? (
+                <span className="text-gradient">
+                  {t.heading}
+                </span>
+
+            ) : (
+              <>
+                {t.heading.split(" ")[0]}{" "}
+                <span className="text-gradient">
+                  {t.heading.split(" ").slice(1).join(" ")}
+                </span>
+              </>
+            )}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             {t.subtitle}
