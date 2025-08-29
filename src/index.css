@@ -121,7 +121,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground font-sans;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nota Sans', sans-serif;
   }
 
   /* Putera Design System Utilities */

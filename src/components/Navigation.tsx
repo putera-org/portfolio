@@ -2,15 +2,38 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
-const Navigation = () => {
+type NavigationProps = {
+  lang: "vi" | "en";
+};
+
+const Navigation = ({ lang }: NavigationProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const labels = {
+    en: {
+      home: "Home",
+      about: "About",
+      services: "Services",
+      portfolio: "Portfolio",
+      contact: "Contact",
+      cta: "Book Free Consultation",
+    },
+    vi: {
+      home: "Trang chủ",
+      about: "Giới thiệu",
+      services: "Dịch vụ",
+      portfolio: "Dự án",
+      contact: "Liên hệ",
+      cta: "Đặt lịch tư vấn miễn phí",
+    },
+  };
+
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "Contact", href: "#contact" },
+    { name: labels[lang].home, href: "#home" },
+    { name: labels[lang].about, href: "#about" },
+    { name: labels[lang].services, href: "#services" },
+    { name: labels[lang].portfolio, href: "#portfolio" },
+    { name: labels[lang].contact, href: "#contact" },
   ];
 
   return (
@@ -41,7 +64,7 @@ const Navigation = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button variant="hero" size="lg">
-              Book Free Consultation
+              {labels[lang].cta}
             </Button>
           </div>
 
@@ -69,7 +92,7 @@ const Navigation = () => {
                 </a>
               ))}
               <Button variant="hero" size="lg" className="mt-4">
-                Book Free Consultation
+                {labels[lang].cta}
               </Button>
             </div>
           </div>
@@ -80,3 +103,4 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
